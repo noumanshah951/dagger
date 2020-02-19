@@ -4,9 +4,13 @@ import com.visionx.daggerpractice.car.DieselEngine
 import com.visionx.daggerpractice.car.Engine
 import dagger.Binds
 import dagger.Module
+import dagger.Provides
 
 @Module
-abstract  class DieselEngineModule  {
-    @Binds
-    abstract fun provideDieselEngine(dieselEngine: DieselEngine): Engine
+  class DieselEngineModule (var hoursePower :Int?) {
+
+    @Provides
+     fun provideDieselEngine(): Engine{
+        return DieselEngine(hoursePower)
+    }
 }
