@@ -1,4 +1,4 @@
-package com.visionx.daggerpractice
+package com.visionx.daggerpractice.car
 
 import android.util.Log
 import javax.inject.Inject
