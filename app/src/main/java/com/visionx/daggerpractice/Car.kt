@@ -7,6 +7,7 @@ class Car @Inject constructor( private val wheel: Wheel) {
     //if we have constructor injection first will call constructor injection then field injection and then method injection we don't use method injection in activities
     @Inject lateinit  var engine: Engine;
     fun drive() {
+        engine?.start()
         Log.d("test", "Drive")
     }
 
