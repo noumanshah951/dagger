@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
   var component:CarComponent = DaggerCarComponent.create()
-car = component.getCar()
+   car = component.getCar()
    car?.drive()
     }
 
