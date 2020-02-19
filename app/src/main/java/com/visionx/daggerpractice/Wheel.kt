@@ -2,4 +2,4 @@ package com.visionx.daggerpractice
 
 import javax.inject.Inject
 
-class Wheel @Inject constructor()
+class Wheel(var rim: Rim? , var tires: Tires)
